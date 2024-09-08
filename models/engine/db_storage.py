@@ -83,7 +83,7 @@ class DBStorage:
         return: the class instance or none
         """
 
-        cls_dict = self.all()
+        cls_dict = self.all(cls)
         for key in cls_dict.keys():
             if cls_dict[key].id == id:
                 return cls_dict[key]
